@@ -10,6 +10,7 @@ def main():
     
     # Interazioni
     print("=== Inizio allenamento ===")
+    giocatore.descrivi()
     allenatore.dirige_allenamento()  # l'allenatore dirige l'allenamento
     giocatore.gioca_partita()        # il giocatore gioca una partita
     assistente.supporta_team()       # l'assistente supporta il team
