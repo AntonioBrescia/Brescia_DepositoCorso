@@ -1,5 +1,3 @@
-# main.py
-
 import input_vendite
 import calcoli
 import stampa_risultati
@@ -25,6 +23,4 @@ def main():
     # Stampa i giorni sopra la media
     stampa_risultati.stampa_giorni_sopra_media(giorni, vendite)
 
-# Esegui solo se questo file è eseguito direttamente
-if __name__ == "__main__":
     main()

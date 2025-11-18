@@ -20,3 +20,4 @@ def leggi_vendite():
 
         if input_valido:
             return vendite
+
