@@ -14,9 +14,12 @@ class VeicoloTrasporto(ABC):
         else:
             print(f"non è possibile caricare {peso} kg perchè supera la capacità massima")
             
+    @property
+    def targa(self):
+         return self._targa
 
     def scarica(self):
-        print(f"Scaricato veicolo {self._targa}.")
+        print(f" veicolo {self._targa} scaricato.")
         self._carico_attuale = 0
 
     @abstractmethod

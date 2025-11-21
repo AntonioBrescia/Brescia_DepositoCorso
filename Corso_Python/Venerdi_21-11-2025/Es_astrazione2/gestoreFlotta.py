@@ -4,11 +4,11 @@ class GestoreFlotta:
 
     def aggiungi_veicolo(self, veicolo):
         self.veicoli.append(veicolo)
-        print(f"Veicolo {veicolo._targa} aggiunto.")
+        print(f"Veicolo {veicolo.targa} aggiunto.")
 
     def rimuovi_veicolo(self, targa):
         for v in self.veicoli:
-            if v._targa == targa:
+            if v.targa == targa:
                 self.veicoli.remove(v)
                 print(f"Veicolo {targa} rimosso.")
                 return
@@ -20,5 +20,5 @@ class GestoreFlotta:
     def stampa_veicoli(self):
         print("--- Veicoli ---")
         for v in self.veicoli:
-            print(f"{v._targa} | {v.tipo} | Carico: {v._carico_attuale} kg")
+            print(f"{v.targa} | {v.tipo} | Carico: {v._carico_attuale} kg")
         print("-------------------------")
