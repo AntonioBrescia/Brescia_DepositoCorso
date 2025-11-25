@@ -1,0 +1,43 @@
+Matrice creata:
+[[31 87 30 49]
+ [98 73 28 54]
+ [75 28 54 78]
+ [94 30 40 51]]
+
+Sotto matrice centrale :
+[[73 28]
+ [28 54]]
+
+Matrice trasposta:
+[[31 98 75 94]
+ [87 73 28 30]
+ [30 28 54 40]
+ [49 54 78 51]]
+
+la somma degli elementi è: 900
+
+la moltiplicazione degli elementi è: [[2046 7154 5775 3008]
+ [ 783 1460 2016  660]
+ [1020  168  108  600]
+ [3479 3564 1950 2448]]
+
+la media  degli elementi è: 56.25
+
+Matrice creata:
+[[20 11]
+ [60 70]]
+
+Sotto matrice centrale :
+[[20 11]
+ [60 70]]
+
+Matrice creata:
+[[13 82]
+ [33 25]]
+
+Matrice creata:
+[[32 19]
+ [61 85]]
+
+Determinante della matrice: 1561.0000000000005
+
