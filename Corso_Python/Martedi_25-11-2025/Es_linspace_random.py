@@ -26,13 +26,16 @@ print("Standard Deviation:", std_value)
 #  Crea 12 numeri tra 0 e 1
 arr = np.linspace(0,1,12)
 
-
+# cambio forma in una matrice 3x4 
 arr_reshape = arr.reshape(3, 4)
 
+#genero una matrice random 3x4
 random_matrice = np.random.rand(3, 4)
 
+#somma elementi 
 somma_arr = arr_reshape.sum()
 somma_random = random_matrice.sum()
-
+#stampa
 print("Somma prima matrice:", somma_arr)
+print("-"*30)
 print("Somma matrice casuale:", somma_random)
