@@ -1,9 +1,13 @@
 import numpy as np
 
 def creazione_salvataggio(file):
+    N = int(input("Quanti elementi vuoi generare negli array? "))
+    start = float(input("Valore iniziale dell'array: "))
+    stop = float(input("Valore finale dell'array: "))
+    random_numeri = int(input("Quanti elementi random vuoi generare? "))
     nome_file = file
-    arr_linspace = np.linspace(0, 10, 50)
-    arr_random = np.random.random(50)
+    arr_linspace = np.linspace(start,stop, N)
+    arr_random = np.random.random(random_numeri)
     somma_elementi = arr_linspace + arr_random
 
     # calcolo le somme 
