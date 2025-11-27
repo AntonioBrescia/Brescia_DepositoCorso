@@ -1,0 +1,8 @@
+Nome,Età,Città,Salario
+Alice,25,Roma,2500
+Bob,30,Milano,3200
+Carla,22,Napoli,2800
+Bob,30,Milano,3200
+Carla,,Napoli,2900
+Alice,25,Roma,2500
+,29,Roma,
