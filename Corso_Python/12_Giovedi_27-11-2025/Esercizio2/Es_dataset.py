@@ -22,7 +22,7 @@ print(totale_per_prodotto)
 
 """ # df.groupby('prodotto')['quantita'].sum()  somma la quantità di ogni prodotto.
 
-.reset_index()  trasforma l’indice prodotto in colonna normale.
+.reset_index()  trasforma l’indice prodotto in colonna 
 
 .sort_values(by='quantita', ascending=False) ordina dal prodotto con più quantità a quello con meno.
 
@@ -49,15 +49,24 @@ soglia = int(input("Quale valore vuoi inserire? "))
 # Creare un nuovo DataFrame filtrato
 vendite_grandi = df[df['Totale Vendite'] > soglia]
 
-# Controllare il risultato
+# stampo il risultato
 print(vendite_grandi)
 file_pathVendite = 'Corso_Python/12_Giovedi_27-11-2025/Esercizio2/topVendite.csv'
 
 vendite_grandi.to_csv(file_pathVendite, index=False)
 
 
-# Ordino il DataFrame per Totale Vendite in ordine decrescente
+# ordino il DataFrame per Totale Vendite in ordine decrescente
 df_ordinato = df.sort_values(by='Totale Vendite', ascending=False)
 
-# Controllare il risultato
+# stampo il risultato
 print(df_ordinato)
+
+# numero di vendite per ogni città.
+# Contare il numero di vendite per città
+vendite_per_citta = df['citta'].value_counts().reset_index()
+
+# Rinominare le colonne
+vendite_per_citta.columns = ['citta', 'Numero Vendite']
+
+print(vendite_per_citta)
